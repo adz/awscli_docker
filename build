@@ -1,2 +1,2 @@
-docker build -t adzdavies/awscli .
+docker build -t adzdavies/awscli_docker .
 

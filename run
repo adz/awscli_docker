@@ -7,4 +7,4 @@ docker run -it --rm \
   -w /work \
   -v $PWD:/work \
   -v ~/.aws:/root/.aws \
-  adzdavies/awscli "$@"
+  adzdavies/awscli_docker "$@"
