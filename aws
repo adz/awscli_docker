@@ -1,0 +1,10 @@
+#!/bin/bash
+
+# Set /work as current working dir inside container
+# Mount current dir as /work inside container
+# Mount in creds
+docker run -it --rm \
+  -w /work \
+  -v $PWD:/work \
+  -v ~/.aws:/root/.aws \
+  adzdavies/awscli aws "$@"
